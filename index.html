@@ -204,20 +204,20 @@
         let startPoint = null;
         let endPoint = null;
         let poiMarkers = [];
-        let mapNum = -1; // SET MAP NUMBER    
+        let mapNum = 25; // SET MAP NUMBER    
 
         // Function to add a marker at a specific point on the map
         const instructions = [
-            { title: "Current Time", info: " " },
-            { title: "Address of Origin", info: " " },
-            { title: "Address of Destination", info: " " },
+            { title: "Current Time", info: "4:10 PM" },
+            { title: "Address of Origin", info: "4529 Francis St, Kansas City, KS 66103" },
+            { title: "Address of Destination", info: "1001 Bedford Ave, North Kansas City, MO 64116" },
             { title: "Distance of Destination", info: "0" },
             { title: "Estimated Time to Destination", info: "0" },
-            { title: "State of Charge of Battery", info: "0 Charge" },
-            { title: "Range of Current Battery", info: "0 Minutes" },
-            { title: "Estimated Drive-distance with Current Charge", info: "0 Miles" },
+            { title: "State of Charge of Battery", info: "15% Charge" },
+            { title: "Range of Current Battery", info: "45 Minutes" },
+            { title: "Estimated Drive-distance with Current Charge", info: "34 Miles" },
             { title: "Type of Chargin Socket", info: "J1772" },
-            { title: "kW Needed to Fully Charge Your Car", info: "0 kW" }
+            { title: "kW Needed to Fully Charge Your Car", info: "51 kW" }
         ];
 
 
@@ -242,13 +242,13 @@
                         { type: 'J1772', value: '6' }
                     ],    
                 chargeTime: [
-                        { type: 'J1772', value: '' }
+                        { type: 'J1772', value: '472' }
                     ],
                 socketAvalability: [
                         { type: 'J1772', value: '4 available' }
                     ],
 
-                energySource: 'Energy Breakdown: 0% Grid, 0% Renewable',
+                energySource: 'Energy Breakdown: 65% Grid, 35% Renewable',
 
                 chargingFee: '$0.20',
                 chargingFeeRate: 'per kWh',
@@ -260,7 +260,7 @@
                 sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0 miles',
                 
                 rating: '★ ★ ★ ★ ★',
-                ratingNum: ''
+                ratingNum: '6'
             },
             {
                 coordinates: [-94.597849, 39.079106],
@@ -281,13 +281,13 @@
                         { type: 'J1772', value: '4' }
                     ],    
                 chargeTime: [
-                        { type: 'J1772', value: '' }
+                        { type: 'J1772', value: '472' }
                     ],
                 socketAvalability: [
                         { type: 'J1772', value: '1 available' }
                     ],       
 
-                energySource: 'Energy Breakdown: 0% Grid, 0% Renewable',
+                energySource: 'Energy Breakdown: 81% Grid, 19% Renewable',
 
                 chargingFee: '$0.20',
                 chargingFeeRate: 'per kWh',
@@ -300,7 +300,7 @@
                 sportsClothes: 'No <br><br> There is no sports or clothing store in walking distance',
                 
                 rating: '★ ★ ★ ★ ★',  
-                ratingNum: '0'
+                ratingNum: '8'
             }
         ];
 
@@ -881,7 +881,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [-94.57142695992077,39.12444987672728]
+                            coordinates: [-94.61050333034247,39.04473135729219]
                         }
                     }
                 ]
@@ -900,7 +900,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [-94.61050333034247,39.04473135729219]
+                            coordinates: [-94.57142695992077,39.12444987672728]
                         }
                     }
                 ]
